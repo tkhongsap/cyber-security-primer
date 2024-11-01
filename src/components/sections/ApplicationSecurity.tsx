@@ -1,56 +1,108 @@
 import React from 'react';
-import Section from '../common/Section';
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { ChevronRightIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 
-const ApplicationSecurity: React.FC = () => {
+const ApplicationSecurity = () => {
   return (
-    <Section title="Application Security">
-      <div className="space-y-6">
-        <div>
-          <h3 className="text-xl font-bold mb-3">Overview</h3>
-          <p className="text-gray-700 leading-relaxed">
-            Application security involves securing software throughout its lifecycle, from development to deployment. This includes following secure coding practices, conducting regular updates, and implementing application firewalls.
-          </p>
-        </div>
+    <Card>
+      <CardHeader>
+        <CardTitle>Application Security</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="space-y-6">
+          {/* Overview Section */}
+          <section>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Overview</h3>
+            <p className="text-gray-600">
+              Application security focuses on protecting software applications from threats 
+              throughout their lifecycle, from design to deployment and maintenance.
+            </p>
+          </section>
 
-        <div>
-          <h3 className="text-xl font-bold mb-3">Traditional Approach</h3>
-          <p className="text-gray-700 leading-relaxed mb-3">
-            Developers conducted manual code reviews and periodic penetration testing to identify vulnerabilities, which was labor-intensive and often missed subtle issues.
-          </p>
-          <ul className="list-disc pl-5 text-gray-700 space-y-2">
-            <li><strong>Use Case:</strong> A development team manually reviews application code for common security flaws. Although this approach catches major issues, it is time-consuming and error-prone.</li>
-            <li><strong>Benefit:</strong> Helps identify basic vulnerabilities but lacks efficiency and accuracy, especially in complex systems.</li>
-          </ul>
-        </div>
+          {/* Traditional Approach Section */}
+          <section>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Traditional Approach</h3>
+            <p className="text-gray-600 mb-4">
+              Conventional application security relied on manual code reviews, periodic penetration 
+              testing, and basic security testing tools.
+            </p>
+            <div className="bg-gray-50 p-4 rounded-lg space-y-3">
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <ChevronRightIcon className="w-5 h-5 text-gray-400" />
+                </div>
+                <div className="ml-3">
+                  <h4 className="text-sm font-medium text-gray-900">Use Case</h4>
+                  <p className="text-sm text-gray-600">
+                    Development teams conducting manual security reviews and testing, 
+                    often missing complex vulnerabilities.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <CheckCircleIcon className="w-5 h-5 text-green-500" />
+                </div>
+                <div className="ml-3">
+                  <h4 className="text-sm font-medium text-gray-900">Benefit</h4>
+                  <p className="text-sm text-gray-600">
+                    Identifies common security issues through established testing procedures.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
-        <div>
-          <h3 className="text-xl font-bold mb-3">How AI Helps</h3>
-          <p className="text-gray-700 leading-relaxed mb-3">
-            AI automates the detection of vulnerabilities and assists developers in implementing security best practices.
-          </p>
-          <ul className="list-disc pl-5 text-gray-700 space-y-2">
-            <li><strong>Use Case:</strong> An AI-powered tool scans the codebase for potential flaws and provides recommendations, enabling teams to address issues before deployment.</li>
-            <li><strong>Benefit:</strong> Reduces human error, accelerates development, and improves the security of applications.</li>
-          </ul>
-        </div>
+          {/* How AI Helps Section */}
+          <section>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">How AI Helps</h3>
+            <p className="text-gray-600 mb-4">
+              AI enhances application security through automated vulnerability detection, 
+              intelligent testing, and continuous security monitoring.
+            </p>
+            <div className="bg-purple-50 p-4 rounded-lg space-y-3">
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <ChevronRightIcon className="w-5 h-5 text-purple-400" />
+                </div>
+                <div className="ml-3">
+                  <h4 className="text-sm font-medium text-gray-900">Key AI Techniques</h4>
+                  <ul className="mt-2 space-y-2 text-sm text-gray-600">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-purple-400 rounded-full mr-2"></span>
+                      Automated Testing: AI performs comprehensive security testing at scale.
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-purple-400 rounded-full mr-2"></span>
+                      Vulnerability Prediction: AI identifies potential security weaknesses early.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
 
-        <div>
-          <h3 className="text-xl font-bold mb-3">Key AI Techniques</h3>
-          <ul className="list-disc pl-5 text-gray-700">
-            <li>Automated Code Scanning: AI analyzes code for security risks, reducing manual effort.</li>
-            <li>Simulated Penetration Testing: AI performs tests to simulate real-world attacks, identifying weaknesses.</li>
-          </ul>
+          {/* Success Metrics Section */}
+          <section>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Key Measures for Success</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white border border-gray-200 rounded-lg p-4">
+                <h4 className="text-sm font-medium text-gray-900 mb-2">Vulnerability Detection Rate</h4>
+                <p className="text-sm text-gray-600">
+                  Speed and accuracy of identifying security vulnerabilities.
+                </p>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-lg p-4">
+                <h4 className="text-sm font-medium text-gray-900 mb-2">Time to Remediation</h4>
+                <p className="text-sm text-gray-600">
+                  Time taken to fix identified security issues.
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
-
-        <div>
-          <h3 className="text-xl font-bold mb-3">Key Measures for Success</h3>
-          <ul className="list-disc pl-5 text-gray-700">
-            <li>Vulnerability Detection Rate: The ability of AI tools to identify and highlight security issues.</li>
-            <li>Time to Remediation: Average time taken to resolve identified vulnerabilities.</li>
-          </ul>
-        </div>
-      </div>
-    </Section>
+      </CardContent>
+    </Card>
   );
 };
 
