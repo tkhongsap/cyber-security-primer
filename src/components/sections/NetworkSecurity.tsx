@@ -82,6 +82,86 @@ const NetworkSecurity = () => {
             </div>
           </section>
 
+          {/* AI Use Cases Section */}
+          <section>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">AI Use Cases</h3>
+            <div className="bg-blue-50 p-4 rounded-lg space-y-3">
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <ChevronRightIcon className="w-5 h-5 text-blue-400" />
+                </div>
+                <div className="ml-3">
+                  <h4 className="text-sm font-medium text-gray-900">Real-Time Threat Detection</h4>
+                  <p className="text-sm text-gray-600">
+                    AI models analyze network traffic in real-time to detect threats and anomalies, enhancing detection speed and accuracy.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <ChevronRightIcon className="w-5 h-5 text-blue-400" />
+                </div>
+                <div className="ml-3">
+                  <h4 className="text-sm font-medium text-gray-900">Automated Incident Response</h4>
+                  <p className="text-sm text-gray-600">
+                    AI systems automate threat responses, reducing the time to react and minimizing damage.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <ChevronRightIcon className="w-5 h-5 text-blue-400" />
+                </div>
+                <div className="ml-3">
+                  <h4 className="text-sm font-medium text-gray-900">User Behavior Analytics</h4>
+                  <p className="text-sm text-gray-600">
+                    AI tracks and analyzes user activities to detect abnormal behavior, helping to prevent insider threats.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Machine Learning Algorithms Section */}
+          <section>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Machine Learning Algorithms</h3>
+            <div className="bg-yellow-50 p-4 rounded-lg space-y-3">
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <ChevronRightIcon className="w-5 h-5 text-yellow-400" />
+                </div>
+                <div className="ml-3">
+                  <h4 className="text-sm font-medium text-gray-900">Anomaly Detection</h4>
+                  <p className="text-sm text-gray-600">
+                    Isolation Forest, One-Class SVM, Autoencoders.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <ChevronRightIcon className="w-5 h-5 text-yellow-400" />
+                </div>
+                <div className="ml-3">
+                  <h4 className="text-sm font-medium text-gray-900">Automated Response</h4>
+                  <p className="text-sm text-gray-600">
+                    Reinforcement Learning, Decision Trees, Bayesian Networks.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <ChevronRightIcon className="w-5 h-5 text-yellow-400" />
+                </div>
+                <div className="ml-3">
+                  <h4 className="text-sm font-medium text-gray-900">User Behavior Analytics</h4>
+                  <p className="text-sm text-gray-600">
+                    Recurrent Neural Networks (RNNs), Long Short-Term Memory (LSTM), Hidden Markov Models (HMM).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Success Metrics Section */}
           <section>
             <h3 className="text-lg font-semibold text-gray-900 mb-3">Key Measures for Success</h3>
